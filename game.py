@@ -14,18 +14,21 @@ blue = (0 , 0, 255)
 background_color = (0,0,0)
 
 #player and enemy size/ locations
-player_size = 50
+player_size = width/16
 player_pos = [width/2,height-2*player_size]
-enemy_size = 50
+enemy_size = width/16
 enemy_pos = [random.randint(0,width-enemy_size), 0]
 enemy_list = [enemy_pos]
 
-
+#misc. game variables, necessary for functions and logic
 game_over = False
 speed = 10
 clock = pygame.time.Clock()
 score = 0 
 myFont = pygame.font.SysFont("monospace", 35)
+#difficulty = [1,2,3,4,5]
+#user_difficulty = input
+#difficulty[i]
 
 #collision detection pixel by pixel
 def collision(player_pos, enemy_pos):
@@ -40,11 +43,13 @@ def collision(player_pos, enemy_pos):
             return True
     return False
 
+#adds progression to the game by increasing speed based on score value
 def set_level(score, speed):
     speed = score/5 + 3
     return speed
 
 
+#function to spawn and drop enemy blocks
 def drop_enemies(enemy_list):
     delay = random.random()
     if len(enemy_list) < score/10+4 and delay < 0.1:
@@ -94,7 +99,7 @@ while not game_over:
                 if x > 0:
                     x -= player_size
             elif event.key == pygame.K_RIGHT:
-                if x < 750:
+                if x < width-player_size:
                     x += player_size
 
             player_pos = [x,y]
