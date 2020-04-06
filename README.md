@@ -11,7 +11,7 @@ The progression of the game occurs as the score increases, more blocks will spaw
 Updates I want to include:
 -----------------------------
 Constant movement with the holding of keys instead of piece by piece movement. <br>
-A final Score recap scene
-A Intro screen that will introduce the controls and concepts to the player. 
-The ability to toggle screen size, and difficulty within the game window. 
+A final Score recap scene. <br>
+A Intro screen that will introduce the controls and concepts to the player. <br>
+The ability to toggle screen size, and difficulty within the game window. <br>
 Improved gameplay mechanics such as a firing weapon to remove incoming blocks, power ups, etc. 
