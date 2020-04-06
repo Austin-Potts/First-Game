@@ -9,7 +9,8 @@ The more blue blocks dodged, the higher the score.
 The progression of the game occurs as the score increases, more blocks will spawn, and they will fall at a faster rate. 
 
 Updates I want to include:
-Constant movement with the holding of keys instead of piece by piece movement. 
+-----------------------------
+Constant movement with the holding of keys instead of piece by piece movement. <br>
 A final Score recap scene
 A Intro screen that will introduce the controls and concepts to the player. 
 The ability to toggle screen size, and difficulty within the game window. 
